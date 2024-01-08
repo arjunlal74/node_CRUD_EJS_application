@@ -8,10 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 //database connection 
-mongoose.connect(process.env.DB_URI);
-const db = mongoose.connection;
-db.on('error', (error) => console.log(error));
-db.once('open', () => console.log("Connected to database"));
+// mongoose.connect(process.env.DB_URI);
+// const db = mongoose.connection;
+// db.on('error', (error) => console.log(error));
+// db.once('open', () => console.log("Connected to database"));
 
 //middlewares
 app.use(express.urlencoded({ extended: false }));
